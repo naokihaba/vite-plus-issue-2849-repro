@@ -3,28 +3,48 @@ set -eu
 
 script_dir=$(cd "$(dirname "$0")" && pwd)
 cd "$script_dir"
-cli="${1:-}"
-if [ -z "$cli" ]; then
-  cli=$(node -p 'require("node:path").resolve(require("node:path").dirname(require.resolve("vite-plus")), "../bin/vp")')
+mode=local
+if [ "${1:-}" = --global ]; then
+  mode=global
+  cli="${2:-$HOME/.vite-plus/bin/vp}"
+else
+  cli="${1:-}"
+  if [ -z "$cli" ]; then
+    cli=$(node -p 'require("node:path").resolve(require("node:path").dirname(require.resolve("vite-plus")), "../bin/vp")')
+  fi
 fi
 if [ ! -f "$cli" ]; then
-  echo "Pass the installed vite-plus/bin/vp path as the first argument." >&2
+  echo "CLI file not found: $cli" >&2
   exit 1
 fi
 cli=$(cd "$(dirname "$cli")" && pwd)/$(basename "$cli")
+if [ "$mode" = global ]; then
+  cli_command=("$cli")
+else
+  cli_command=(node "$cli")
+fi
+node_version="${REPRO_NODE_VERSION:-24.21.0}"
+if [[ ! "$node_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+  echo "REPRO_NODE_VERSION must be an exact version, such as 24.21.0." >&2
+  exit 1
+fi
 
 repro_dir=$(mktemp -d "${TMPDIR:-/tmp}/vp-2849-rerun.XXXXXX")
 echo "Logs: $repro_dir"
 git init -q "$repro_dir/repo"
 git -C "$repro_dir/repo" -c user.name=Repro -c user.email=repro@example.invalid -c commit.gpgsign=false -c core.hooksPath=/dev/null commit -q --allow-empty -m init
 git -C "$repro_dir/repo" -c core.hooksPath=/dev/null worktree add -q --detach "$repro_dir/worktree" HEAD
-(cd "$repro_dir/repo" && node "$cli" config --no-agent)
-(cd "$repro_dir/worktree" && node "$cli" config --no-agent)
+# An exact version avoids version-index requests before global CLI delegation.
+printf '%s\n' "$node_version" > "$repro_dir/repo/.node-version"
+printf '%s\n' "$node_version" > "$repro_dir/worktree/.node-version"
+echo "Mode: $mode; .node-version: $node_version"
+(cd "$repro_dir/repo" && "${cli_command[@]}" config --no-agent)
+(cd "$repro_dir/worktree" && "${cli_command[@]}" config --no-agent)
 cp "$repro_dir/repo/.git/config" "$repro_dir/config-before.txt"
 
 run_config() {
   local tree="$1" round="$2" code=0
-  (cd "$repro_dir/$tree" && node "$cli" config --no-agent) > "$repro_dir/$tree-$round.log" 2>&1 || code=$?
+  (cd "$repro_dir/$tree" && "${cli_command[@]}" config --no-agent) > "$repro_dir/$tree-$round.log" 2>&1 || code=$?
   echo "$code" > "$repro_dir/$tree-$round.status"
 }
 

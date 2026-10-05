@@ -1,0 +1,22 @@
+2026-10-05T02:30:26.276028Z DEBUG vp: argv0: $HOME/.vite-plus/bin/vp
+2026-10-05T02:30:26.279292Z DEBUG vp::js_executor: Resolving project runtime from "/private/tmp/vp-2849-global-gvhlg28z/repo"
+2026-10-05T02:30:26.280105Z DEBUG vp_js_runtime::providers::node: Cache expired, trying conditional request with ETag
+2026-10-05T02:30:26.280784Z DEBUG vp_js_runtime::download: Fetching with cache headers from https://nodejs.org/dist/index.json
+2026-10-05T02:30:32.179865Z  WARN vp_js_runtime::providers::node: Conditional request failed: Failed to download from https://nodejs.org/dist/index.json: error sending request for url (https://nodejs.org/dist/index.json): client error (Connect): dns error: error resolving DNS: failed to lookup address information: nodename nor servname provided, or not known, using expired cache
+2026-10-05T02:30:32.180020Z DEBUG vp_js_runtime::runtime: node 24.21.0 already cached at AbsolutePathBuf("$HOME/.vite-plus/js_runtime/node/24.21.0")
+2026-10-05T02:30:32.180196Z DEBUG resolve{path="/private/tmp/vp-2849-global-gvhlg28z/repo" specifier="vite-plus/package.json"}: oxc_resolver: options=ResolveOptions { cwd: None, tsconfig: None, alias: [], alias_fields: [], condition_names: ["import", "node"], enforce_extension: Disabled, exports_fields: [["exports"]], imports_fields: [["imports"]], extension_alias: [], extensions: [".js", ".json", ".node"], fallback: [], fully_specified: false, main_fields: ["main"], main_files: ["index"], modules: ["node_modules"], resolve_to_context: false, prefer_relative: false, prefer_absolute: false, restrictions: [], roots: [], symlinks: true, node_path: true, builtin_modules: false, module_type: false, allow_package_exports_in_directory_resolve: false, yarn_pnp: false } path="/private/tmp/vp-2849-global-gvhlg28z/repo" specifier="vite-plus/package.json" err=NotFound("vite-plus/package.json")
+2026-10-05T02:30:32.181590Z DEBUG vp::js_executor: Delegating to CLI via JS entry point: AbsolutePathBuf("$HOME/.vite-plus/1.0.0/node_modules/vite-plus/dist/bin.js") ["config", "--no-agent"]
+2026-10-05T02:30:32.181624Z DEBUG vp::js_executor: Set VP_CLI_BIN to AbsolutePathBuf("$HOME/.vite-plus/bin/vp")
+2026-10-05T02:30:32.261062Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261745Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261753Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261772Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261787Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261797Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261801Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261811Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261816Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261823Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261826Z DEBUG napi: documentationUrl
+2026-10-05T02:30:32.261907Z DEBUG napi: ensureBlockingStdio
+2026-10-05T02:30:32.276306Z DEBUG napi: parseConfigArgs

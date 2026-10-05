@@ -1,0 +1,149 @@
+{
+  "command": "global vp config --no-agent",
+  "runs": 20,
+  "failures": 0,
+  "lock_failures": 0,
+  "config_unchanged": true,
+  "results": [
+    {
+      "round": 1,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.78
+    },
+    {
+      "round": 1,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 6.94
+    },
+    {
+      "round": 2,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.06
+    },
+    {
+      "round": 2,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 6.4
+    },
+    {
+      "round": 3,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.86
+    },
+    {
+      "round": 3,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 4.63
+    },
+    {
+      "round": 4,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.52
+    },
+    {
+      "round": 4,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 6.34
+    },
+    {
+      "round": 5,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 6.6
+    },
+    {
+      "round": 5,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.74
+    },
+    {
+      "round": 6,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 6.27
+    },
+    {
+      "round": 6,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.88
+    },
+    {
+      "round": 7,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.76
+    },
+    {
+      "round": 7,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.96
+    },
+    {
+      "round": 8,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.26
+    },
+    {
+      "round": 8,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.27
+    },
+    {
+      "round": 9,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 4.85
+    },
+    {
+      "round": 9,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 4.87
+    },
+    {
+      "round": 10,
+      "worktree": "repo",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 4.99
+    },
+    {
+      "round": 10,
+      "worktree": "worktree",
+      "exit_code": 0,
+      "lock_failure": false,
+      "seconds": 5.25
+    }
+  ]
+}

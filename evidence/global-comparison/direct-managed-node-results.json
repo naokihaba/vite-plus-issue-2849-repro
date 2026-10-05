@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "label": "direct-managed-node",
+    "runs": 40,
+    "failures": 14,
+    "lock_failures": 14,
+    "mean_seconds": 0.152
+  },
+  "runs": [
+    {
+      "round": 0,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.155
+    },
+    {
+      "round": 0,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.135
+    },
+    {
+      "round": 1,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 1,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.139
+    },
+    {
+      "round": 2,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.156
+    },
+    {
+      "round": 2,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.138
+    },
+    {
+      "round": 3,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.155
+    },
+    {
+      "round": 3,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.155
+    },
+    {
+      "round": 4,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 4,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 5,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 5,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.138
+    },
+    {
+      "round": 6,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 6,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 7,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.156
+    },
+    {
+      "round": 7,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.143
+    },
+    {
+      "round": 8,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.16
+    },
+    {
+      "round": 8,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.141
+    },
+    {
+      "round": 9,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.155
+    },
+    {
+      "round": 9,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.136
+    },
+    {
+      "round": 10,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 10,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.158
+    },
+    {
+      "round": 11,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 11,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 12,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 12,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 13,
+      "tree": "repo",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.138
+    },
+    {
+      "round": 13,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.156
+    },
+    {
+      "round": 14,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.158
+    },
+    {
+      "round": 14,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.139
+    },
+    {
+      "round": 15,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 15,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.159
+    },
+    {
+      "round": 16,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.16
+    },
+    {
+      "round": 16,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.141
+    },
+    {
+      "round": 17,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 17,
+      "tree": "worktree",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 18,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.157
+    },
+    {
+      "round": 18,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.139
+    },
+    {
+      "round": 19,
+      "tree": "repo",
+      "exit": 0,
+      "lock": false,
+      "seconds": 0.156
+    },
+    {
+      "round": 19,
+      "tree": "worktree",
+      "exit": 1,
+      "lock": true,
+      "seconds": 0.15
+    }
+  ]
+}
