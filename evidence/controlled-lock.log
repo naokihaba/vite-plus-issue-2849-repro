@@ -1,0 +1,3 @@
+11:11:55.718500 git.c:502               trace: built-in: git config core.hooksPath .vite-hooks/_
+error: could not lock config file /private/tmp/vp-2849.46FCKG/repo/.git/config: File exists
+

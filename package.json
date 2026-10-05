@@ -1,0 +1,10 @@
+{
+  "name": "vite-plus-issue-2849-repro",
+  "private": true,
+  "scripts": {
+    "repro": "bash reproduce.sh"
+  },
+  "devDependencies": {
+    "vite-plus": "1.0.0"
+  }
+}
